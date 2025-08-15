@@ -1,13 +1,13 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 import { type Candidate, type ParsedResume } from '../types';
+const apiKey = import.meta.env.VITE_API_KEY;
 
-if (!process.env.API_KEY) {
+if (!apiKey) {
   throw new Error("API_KEY environment variable is not set.");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
+const ai = new GoogleGenAI({ apiKey: apiKey });
 const responseSchema = {
   type: Type.ARRAY,
   items: {
