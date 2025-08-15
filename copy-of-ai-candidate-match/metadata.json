@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Candidate Match",
+  "description": "An application that uses AI to analyze and rank resumes against a job description, providing a match percentage and key insights for each candidate.",
+  "requestFramePermissions": []
+}
